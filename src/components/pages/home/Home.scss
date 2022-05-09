@@ -1,0 +1,157 @@
+.nav-pills .nav-link.active {
+    background-color: black !important;    
+}
+
+.nav-pills {
+    .nav-link {
+        background-color: white !important;
+        margin-right: 20px; 
+        color: rgb(126, 122, 122);
+    }    
+}
+
+.form-check-input:checked {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+.airport, .location, .departure-date-time, .passengers {
+    .search {
+        border: 1px solid;
+        border-radius: 4px;
+        background: white;
+        border-color: hsl(0, 0%, 80%);
+        padding-left: 10px;       
+
+        .fa {
+            color: #ffc107 !important;
+        }
+
+        svg {
+            fill: #ffc107 !important;
+        }
+
+        .css-1s2u09g-control {
+            border: none !important;
+            
+        }
+
+        .css-1pahdxg-control {
+           box-shadow: none !important;
+           border: none !important;
+        }
+
+        .css-1pahdxg-control:hover {
+            border: none !important;
+        }
+    }
+}
+
+.nav-pills .nav-link.active {
+    background-color: black !important;    
+}
+
+.nav-pills {
+    .nav-link {
+        background-color: white !important;
+        margin-right: 20px; 
+        color: rgb(126, 122, 122);
+    }    
+}
+
+.form-check-input:checked {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+.departure-date-time, .arrival-date-time {
+    .search {
+        border: 1px solid;
+        border-radius: 4px;
+        background: white;
+        border-color: hsl(0, 0%, 80%);
+        padding-left: 10px;       
+        width: 50%;
+        height: 38px;
+
+        input {
+            border: none !important;            
+        }
+
+        .react-datepicker-ignore-onclickoutside {
+            border: none !important;
+            outline: none !important;
+        }
+
+        .fa {
+            color: #ffc107 !important;
+            margin-right: 8px;
+        }
+
+        svg {
+            fill: #ffc107 !important;
+        }
+
+        .css-1s2u09g-control {
+            border: none !important;
+            
+        }
+
+        .css-1pahdxg-control {
+           box-shadow: none !important;
+           border: none !important;
+        }
+
+        .css-1pahdxg-control:hover {
+            border: none !important;
+        }
+    }
+}
+
+.arrival-date-time {
+    .search {
+        border: 1px solid;
+        border-radius: 4px;
+        background: white;
+        border-color: hsl(0, 0%, 80%);
+        padding-left: 10px;       
+        width: 100%;
+        height: 38px;
+
+        input {
+            border: none !important;            
+        }
+
+        .react-datepicker-ignore-onclickoutside {
+            border: none !important;
+            outline: none !important;
+        }
+
+        .fa {
+            color: #ffc107 !important;
+            margin-right: 8px;
+        }
+
+        svg {
+            fill: #ffc107 !important;
+        }
+
+        .css-1s2u09g-control {
+            border: none !important;
+            
+        }
+
+        .css-1pahdxg-control {
+           box-shadow: none !important;
+           border: none !important;
+        }
+
+        .css-1pahdxg-control:hover {
+            border: none !important;
+        }
+    }
+}
+
+.passengers, .discount {
+    width: 45%;
+}
