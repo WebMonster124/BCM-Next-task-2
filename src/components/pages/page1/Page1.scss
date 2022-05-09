@@ -15,13 +15,16 @@
             .container-1, .container-2 {
                 background-color: white;
                 cursor: pointer;
-            }
+                transition: all 0.3s ease-in;
 
-            .container-1 {
-                position: relative;
-                bottom: 30px;
-                right: 30px;
-            }
+                // svg {
+                //     #Ellipse {
+                //         path:last-child {
+                //             fill-opacity: 0;
+                //         }
+                //     }
+                // }
+            }          
         }
     
         .main-container-2 {
@@ -33,21 +36,52 @@
             .container-3, .container-4 {
                 background-color: white;
                 cursor: pointer;
+                transition: all 0.3s ease-in;
+
+                // svg {
+                //     #Ellipse {
+                //         path:last-child {
+                //             fill-opacity: 0;
+                //         }
+                //     }
+                // }
             }
         }
     }
 
     .detail {
         position: absolute;
-        padding: 15px 20px;
-        width: 330px;
+        padding: 15px 20px;       
         height: 590px;
         z-index: 1;
+
+        .diagram {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            right: 0;
+            bottom: 0;
+            border-radius: 50px 0 0 0;
+            border-top: 19px solid transparent;
+            border-left: 19px solid transparent;
+            background: linear-gradient(186deg, #3E66FB, #fdfdfd) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+            width: 220px;
+            z-index: -1;
+        }
 
         .description {
             position: absolute;
             top: 75px;
-            left: -34px;
+            left: -34px;           
+
+            .title {
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
 
             p {
                 font-family: 'Rubik';
@@ -129,21 +163,5 @@
                 }
             }
         }
-    }
-
-    .detail::before {
-            content: "";
-            position: absolute;
-            top: 50px;
-            left: 100px;
-            right: 0;
-            bottom: 0;
-            border-radius: 50px 0 0 0;
-            border-top: 19px solid transparent;
-            border-left: 19px solid transparent;
-            background: linear-gradient(186deg, #3E66FB, #fdfdfd) border-box;
-            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-            -webkit-mask-composite: destination-out;
-            mask-composite: exclude;
-    }
+    }   
 }
