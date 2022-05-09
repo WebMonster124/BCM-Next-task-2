@@ -47,7 +47,7 @@
             
             .description {
                 padding-left: 30px;
-                .title-1 {
+                .title {
                     font-family: 'Rubik';
                     font-style: normal;
                     font-weight: 500;
@@ -64,6 +64,9 @@
                     line-height: 20px;                    
                     color: rgba(0, 0, 0, 0.29);
                 }
+                .confirm-images {
+                    cursor: pointer;
+                }
             }
         } 
         
@@ -77,13 +80,35 @@
             }
 
             .description {
-                margin-top: 25px;
+                margin-top: 45px;
                 padding-left: 30px;
 
+                .title-1 {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 28px;
+                    display: flex;
+                    align-items: center;
+                    color: #3E66FB;
+                }
+
+                .content {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;                    
+                    color: rgba(0, 0, 0, 0.29);
+                }
+
                 .confirm-images {
+                    cursor: pointer;
+
                     .vector {
                         position: relative;
-                        left: 92px;
+                        left: 40px;
                     }
 
                     .finger {
@@ -108,5 +133,8 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+    }
+    .btn:hover {
+        color: white;
     }
 }
