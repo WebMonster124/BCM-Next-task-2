@@ -1,18 +1,16 @@
 import React from 'react';
 import {
     Container, 
-    Offcanvas, 
     Navbar, 
     Nav, 
-    NavDropdown, 
-    Form, 
-    FormControl, 
     Button,
     Dropdown
 } from 'react-bootstrap'
 
 import Settings_img from '../../../images/settings.png';
 import Notification from '../../../images/notification.png';
+import Avatar from '../../../images/Profile.png';
+import Stroke from '../../../images/Stroke.png';
 
 import './Header.scss';
 
@@ -30,19 +28,27 @@ const Header = () => (
                         <img src={Settings_img} alt="settings"/>
                     </Nav.Link>
                     <Nav.Link href="#link" className='notification'>
-                        <img src={Notification} alt="settings"/>
-                    </Nav.Link>
+                        <img src={Notification} alt="settings" className='notification'/>
+                    </Nav.Link>                   
                     <Dropdown>
                         <Dropdown.Toggle variant="success" id="dropdown-basic">
-                            Dropdown Button
+                            <div className='profile d-flex align-items-center'>
+                                <img src={Avatar} alt="avatar"/>
+                                <div className='content'>
+                                    <div className='name'>AMara Kyle</div>
+                                    <div className='role'>BCM manager</div>
+                                </div>
+                                <div className='stroke'>
+                                    <img src={Stroke} alt="stroke" />
+                                </div>                        
+                            </div>
                         </Dropdown.Toggle>
-
                         <Dropdown.Menu>
                             <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                             <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                             <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                         </Dropdown.Menu>
-                    </Dropdown>
+                    </Dropdown>                  
                 </Nav>
                 </Navbar.Collapse>
             </Container>

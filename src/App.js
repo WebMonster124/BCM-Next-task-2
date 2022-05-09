@@ -11,7 +11,7 @@ import { Page1 } from './components/pages/page1';
 export const App = () => (
     <Provider store={createAppStore()}>
       <Header />
-      <Container className="pt-3">
+      <Container>
         <Routes>        
           <Route path='/' element={<Home />} exact={true} />
           <Route path='/page1' element={<Page1 />} exact={true} />

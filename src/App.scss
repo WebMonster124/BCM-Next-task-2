@@ -1,24 +1,9 @@
 @import "custom";
 
 body {
-  background: #f1f1f9;
-}
-
-.header {
-  text-align: center;
+  background: #F6F6F7;
 }
 
 p {
-  margin-bottom: 0.5rem;
-}
-
-span {
-  &.dangerText {
-    color: #dc3545;
-  }
-
-  &.infoText {
-    color: #17a2b8;
-    font-weight: bold;
-  }
+  margin-bottom: 0;
 }

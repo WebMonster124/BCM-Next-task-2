@@ -1,0 +1,149 @@
+.main-page1 {
+    margin-top: 60px;
+    position: relative;
+
+    .main {
+        position: absolute;
+        left: 230px;
+        background-color: white;
+
+        .main-container-1 {
+            display: flex;
+            justify-content: center;   
+            gap: 11px;        
+            
+            .container-1, .container-2 {
+                background-color: white;
+                cursor: pointer;
+            }
+
+            .container-1 {
+                position: relative;
+                bottom: 30px;
+                right: 30px;
+            }
+        }
+    
+        .main-container-2 {
+            display: flex;
+            justify-content: center;       
+            gap: 11px;
+            margin-top: 11px;      
+           
+            .container-3, .container-4 {
+                background-color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .detail {
+        position: absolute;
+        padding: 15px 20px;
+        width: 330px;
+        height: 590px;
+        z-index: 1;
+
+        .description {
+            position: absolute;
+            top: 75px;
+            left: -34px;
+
+            p {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: #C2C9D1;
+            }
+
+            .policy {
+                background-color: white;
+                width: 186px;
+                height: 86px;
+                border-radius: 10px;
+                margin-top: 30px;
+                padding: 12px 0;
+
+                .policy-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 34px;  
+
+                    .mark {
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 18px;
+                        background: #3CC13B;
+                    }
+
+                    .mark-blue {
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 18px;
+                        background: #3E66FB;
+                    } 
+                }
+
+                p {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 28px;
+                    color: #000000;
+                }               
+
+                .status {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #3CC13B;
+                    padding-left: 30px;
+                    padding-top: 8px;
+                }
+
+                .status-awaiting {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #3E66FB;
+                    padding-left: 30px;
+                    padding-top: 8px;
+                }
+
+                .status-not-approved {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-left: 30px;
+                    padding-top: 8px;
+                    color: rgba(62, 102, 251, 0.5);
+                }
+            }
+        }
+    }
+
+    .detail::before {
+            content: "";
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            right: 0;
+            bottom: 0;
+            border-radius: 50px 0 0 0;
+            border-top: 19px solid transparent;
+            border-left: 19px solid transparent;
+            background: linear-gradient(186deg, #3E66FB, #fdfdfd) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+    }
+}

@@ -7,9 +7,31 @@
         }
 
         .navbar-nav {
+            position: relative;
+
             a {                
                 padding: 25px;
             }           
+        }
+
+        .dropdown {
+            button {
+                background: white;
+                border: none; 
+            }
+
+            .dropdown-toggle::after {
+                display: none !important;
+            }
+
+            :focus {
+                box-shadow: none;
+            }
+            
+            .dropdown-menu {
+                right: 0;
+                left: 50px;
+            }
         }
     }
 
@@ -39,8 +61,37 @@
         width: 12px;
         height: 12px;
         position: absolute;
-        top: 25px;
-        left: -35px;
+        top: 26px;
+        left: 120px;
         border-radius: 24px
+    }
+
+    .profile {
+        padding-left: 40px;
+        .content {
+            padding-left: 10px;
+            text-align: left;
+            .name {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #2F3C4C;
+            }
+
+            .role {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 10px;
+                line-height: 14px;             
+                color: #3E66FB;
+            }
+        }
+        
+        .stroke {
+            margin-left: 50px;
+        }
     }
 }
