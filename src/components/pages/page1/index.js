@@ -119,7 +119,7 @@ const Page1 = () => {
     const [improveOutside, setImproveOutside] = useState("");
     const [improveMiddleBack, setImproveMiddleBack] = useState("");
     const [improveMiddleSelect, setImproveMiddleSelect] = useState("");
-    const [improveValue, setImproveValue] = useState(70);
+    const [improveValue, setImproveValue] = useState(40);
     const [improveValuePos, setImproveValuePos] = useState([0,0]);
     const [improveInside, setImproveInside] = useState("");
     const [selImprove, setSelImprove] = useState("");
