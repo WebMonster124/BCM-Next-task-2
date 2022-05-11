@@ -103,7 +103,7 @@ const Page1 = () => {
     const [defineModePath, setDefineModePath] = useState("");
     const [defineModeBack, setDefineModeBack] = useState("");
     const [defineModePathBack, setDefineModePathBack] = useState("");
-    const [defineValue, setDefineValue] = useState(30);
+    const [defineValue, setDefineValue] = useState(60);
     const [defineValuePos, setDefineValuePos] = useState([0,0]);
     const [defineInside, setDefineInside] = useState("");
     const [selDefine, setSelDefine] = useState("");
@@ -172,7 +172,7 @@ const Page1 = () => {
         // middle arc
         let cpos = [336,336];
         let r = 227;
-        let start = 90 - defineValue;
+        let start = 90 - designValue;
         let end = 90;
         let w = 80;
         let round = 12;
@@ -185,7 +185,7 @@ const Page1 = () => {
 
         //middle value
         r = 187;
-        let value = pointOnArc(cpos, r, 90 - defineValue);
+        let value = pointOnArc(cpos, r, 90 - designValue);
         setDesignValuePos(value);
 
         // outside arc
