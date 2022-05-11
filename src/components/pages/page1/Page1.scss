@@ -29,25 +29,6 @@
                     }
                 }                
             }
-            
-            .define-click {
-                opacity: 1 !important;
-                position: relative;
-                bottom: 30px;
-                right: 30px;                          
-            }
-
-            .design-click {
-                position: relative;
-                bottom: 30px;
-                left: 30px;
-
-                #Ellipse {
-                    path:last-child {
-                        fill-opacity: 0 !important;
-                    }
-                }             
-            }
         }
     
         .improve-embed-container {
@@ -63,30 +44,6 @@
                 #Ellipse {
                     path:last-child {
                         fill-opacity: 0.5;
-                    }
-                }
-            }
-
-            .improve-click {
-                position: relative;
-                top: 30px;
-                right: 30px;
-                
-                #Ellipse {
-                    path:last-child {
-                        fill-opacity: 0 !important;
-                    }
-                }
-            }
-
-            .embed-click {
-                position: relative;
-                top: 30px;
-                left: 30px;
-
-                #Ellipse {
-                    path:last-child {
-                        fill-opacity: 0 !important;
                     }
                 }
             }
