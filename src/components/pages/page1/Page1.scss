@@ -6,29 +6,148 @@
         position: absolute;
         left: 230px;
         background-color: white;
+        border-radius: 400px;
 
         .define-design-container {
             display: flex;
             justify-content: center;   
             gap: 11px;        
             
-            .define, .design {
+            .define, .design {                
                 background-color: white;
                 cursor: pointer;
-                transition: all 0.3s ease-in;
-            }          
+            }
+
+            .define {
+                opacity: 0.5;
+            }
+
+            .design {                
+                #Ellipse {
+                    path:last-child {
+                        fill-opacity: 0.5;
+                    }
+                }                
+            }
+            
+            .define-click {
+                opacity: 1 !important;
+                position: relative;
+                bottom: 30px;
+                right: 30px;                          
+            }
+
+            .design-click {
+                position: relative;
+                bottom: 30px;
+                left: 30px;
+
+                #Ellipse {
+                    path:last-child {
+                        fill-opacity: 0 !important;
+                    }
+                }             
+            }
         }
     
         .improve-embed-container {
             display: flex;
             justify-content: center;       
             gap: 11px;
-            margin-top: 11px;      
+            margin-top: 11px;
            
             .improve, .embed {
                 background-color: white;
-                cursor: pointer;
-                transition: all 0.3s ease-in;
+                cursor: pointer; 
+                
+                #Ellipse {
+                    path:last-child {
+                        fill-opacity: 0.5;
+                    }
+                }
+            }
+
+            .improve-click {
+                position: relative;
+                top: 30px;
+                right: 30px;
+                
+                #Ellipse {
+                    path:last-child {
+                        fill-opacity: 0 !important;
+                    }
+                }
+            }
+
+            .embed-click {
+                position: relative;
+                top: 30px;
+                left: 30px;
+
+                #Ellipse {
+                    path:last-child {
+                        fill-opacity: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .quarter-field-define {       
+        .define-design-container {
+            .define {
+                opacity: 1 !important;
+                position: relative !important;
+                bottom: 30px !important;
+                right: 30px !important;  
+            }           
+        }
+    }
+
+    .quarter-field-design { 
+        .define-design-container {           
+            .design {
+                position: relative !important;
+                bottom: 30px !important;
+                left: 30px !important;
+
+                #Ellipse {
+                    path:last-child {
+                        fill-opacity: 0 !important;
+                    }
+                }             
+            }
+        }
+    }
+
+    .quarter-field-improve {
+        .improve-embed-container {
+            .improve {
+                position: relative !important;
+                top: 30px !important;
+                right: 30px !important;
+                
+                #Ellipse {
+                    path:last-child {
+                        fill-opacity: 0 !important;
+                    }
+                }
+            }           
+        }
+    }
+
+    .quarter-field-embed {
+        .improve-embed-container {  
+            .embed {
+                position: relative !important;
+                top: 30px !important;
+                left: 30px !important;
+
+                #Ellipse {
+                    path:last-child {
+                        fill-opacity: 0 !important;
+                    }
+                }
             }
         }
     }
@@ -147,5 +266,151 @@
                 }
             }
         }
-    }   
+    }
+
+    .define-detail {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+
+        .diagram {
+            border-radius: 50px 0 0 0 !important;
+            border-top: 19px solid transparent !important;
+            border-left: 19px solid transparent !important;
+            border-bottom: none !important;
+            border-right: none !important;
+            background: linear-gradient(186deg, #3E66FB, #fdfdfd) border-box !important;
+        } 
+        
+        .description {
+            position: absolute !important;
+            top: 75px !important;
+            left: -34px !important;
+
+            .title {
+                position: relative !important;
+                top: 0px !important;
+                left: 0px !important;
+                text-align: left !important;
+            }
+
+            .policy {
+                .policy-container {
+                    flex-direction: initial !important;
+                }
+            }
+        }
+    }
+
+    .design-detail {  
+        position: absolute !important;
+        left: 720px !important;
+        top: 0 !important;
+
+        .diagram {
+            border-radius: 0 50px 0 0 !important;
+            border-top: 19px solid transparent !important;
+            border-right: 19px solid transparent !important;
+            border-bottom: none !important;
+            border-left: none !important;
+            background: linear-gradient(160deg, #3E66FB, #fdfdfd) border-box !important;
+        }    
+        
+        .description {
+            position: absolute !important;
+            top: 75px !important;
+            left: 267px !important;
+
+            .title {
+                position: relative !important;
+                top: 0px !important;
+                left: 0px !important;
+                text-align: right !important;
+            }
+
+            .policy {
+                .policy-container {
+                    flex-direction: row-reverse !important;
+                }
+
+                .status, .status-awaiting, .status-not-approved, .status-not-approved {
+                    float: right !important;
+                    padding: 8px 30px 0 0 !important;
+                }
+            }
+        }
+    }
+
+    .improve-detail {
+        position: absolute !important;
+        left: 0 !important;
+        top: 40px !important;
+
+        .diagram {
+            border-radius: 0 0 0 50px;
+            border-bottom: 19px solid transparent !important;
+            border-left: 19px solid transparent !important;
+            border-top: none !important;
+            border-right: none !important;
+            background: linear-gradient(-20deg, #3E66FB, #fdfdfd) border-box !important;
+        }  
+        
+        .description {
+            position: absolute !important;
+            top: -40px !important;
+            left: -34px !important;
+
+            .title {
+                position: relative !important;
+                top: 550px !important;
+                left: 0px !important;
+                text-align: left !important;
+            }
+
+            .policy {
+                .policy-container {
+                    flex-direction: initial !important;
+                }               
+            }
+        }
+    }
+
+    .embed-detail {  
+        position: absolute !important;
+        left: 720px !important;
+        top: 40px !important;
+
+        .diagram {
+            border-radius: 0 0 50px 0 !important;
+            border-bottom: 19px solid transparent !important;
+            border-right: 19px solid transparent !important;
+            border-top: none !important;
+            border-left: none !important;
+            background: linear-gradient(10deg, #3E66FB, #fdfdfd) border-box !important;
+        }
+
+        .description {
+            position: absolute !important;
+            top: -40px !important;
+            left: 267px !important;
+
+            .title {
+                position: relative !important;
+                top: 550px !important;
+                left: 0px !important;
+                text-align: right !important;
+            }
+
+            .policy {
+                .policy-container {
+                    flex-direction: row-reverse !important;
+                }
+
+                .status, .status-awaiting, .status-not-approved, .status-not-approved {
+                    float: right !important;
+                    padding: 8px 30px 0 0 !important;
+                }
+            }
+        }
+    }
 }
