@@ -42,15 +42,14 @@ const Page1 = () => {
                         </div>
                         <div className='status-not-approved'>Not Approved</div>
                     </div>
-                </div>
-                
+                </div>                
             </div>
-            <div className='main'>
-                <div className='main-container-1'>
-                    <div className='container-1' id="container-1">                    
+            <div className='quarter-field'>
+                <div className='define-design-container'>
+                    <div className='define' id="define">                    
                     <img src={Svg} />
                     </div>
-                    <div className='container-2' id="container-2">
+                    <div className='design' id="design">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="336" height="336" viewBox="0 0 336 336" fill="none">
                             <g id="Control Panel 5">
                             <rect width="1440" height="888" transform="translate(-744 -147)" fill="white"/>
@@ -96,8 +95,8 @@ const Page1 = () => {
                         </svg>
                     </div>
                 </div>
-                <div className='main-container-2'>
-                    <div className='container-3' id="container-3">
+                <div className='improve-embed-container'>
+                    <div className='improve' id="improve">
                         <svg width="336" height="336" viewBox="0 0 336 336" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                             <g id="Control Panel 5">
                             <rect width="1440" height="888" transform="translate(-391 -496)" fill="white"/>
@@ -143,7 +142,7 @@ const Page1 = () => {
                         </svg>
 
                     </div>
-                    <div className='container-4' id="container-4">
+                    <div className='embed' id="embed">
                         <svg width="336" height="336" viewBox="0 0 336 336" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                             <g id="Control Panel 5">
                             <rect width="1440" height="888" transform="translate(-744 -496)" fill="white"/>

@@ -1,17 +1,17 @@
 import $ from 'jquery';
 
 $(document).ready(function(){        
-    $("#container-1").css({bottom: 30, right: 30, position:'relative'});
+    $("#define").css({bottom: 30, right: 30, position:'relative'});
     
-    $('#container-1').on('click',function(){
-        $("#container-1").css('opacity', '1');
-        $("#container-2 #Ellipse path:last-child").css('fill-opacity', '0.5');
-        $("#container-3 #Ellipse path:last-child").css('fill-opacity', '0.5');
-        $("#container-4 #Ellipse path:last-child").css('fill-opacity', '0.5');
-        $("#container-1").css({bottom: 30, right: 30, position:'relative'});
-        $("#container-2").css({bottom: 0, left: 0, position:'relative'});
-        $("#container-3").css({top: 0, right: 0, position:'relative'});
-        $("#container-4").css({top: 0, left: 0, position:'relative'});
+    $('#define').on('click',function(){
+        $("#define").css('opacity', '1');
+        $("#design #Ellipse path:last-child").css('fill-opacity', '0.5');
+        $("#improve #Ellipse path:last-child").css('fill-opacity', '0.5');
+        $("#embed #Ellipse path:last-child").css('fill-opacity', '0.5');
+        $("#define").css({bottom: 30, right: 30, position:'relative'});
+        $("#design").css({bottom: 0, left: 0, position:'relative'});
+        $("#improve").css({top: 0, right: 0, position:'relative'});
+        $("#embed").css({top: 0, left: 0, position:'relative'});
         $('.diagram').css('border-radius', '50px 0 0 0')
         $('.diagram').css('border-top', '19px solid transparent')
         $('.diagram').css('border-left', '19px solid transparent')
@@ -25,16 +25,16 @@ $(document).ready(function(){
         $(".title").css('text-align', 'left');
     });
 
-    $('#container-2').on('click',function(){
-        $("#container-1").css('opacity', '0.5');
-        $("#container-2 #Ellipse path:last-child").css('fill-opacity', '0');
-        $("#container-3 #Ellipse path:last-child").css('fill-opacity', '0.5');
-        $("#container-4 #Ellipse path:last-child").css('fill-opacity', '0.5');
+    $('#design').on('click',function(){
+        $("#define").css('opacity', '0.5');
+        $("#design #Ellipse path:last-child").css('fill-opacity', '0');
+        $("#improve #Ellipse path:last-child").css('fill-opacity', '0.5');
+        $("#embed #Ellipse path:last-child").css('fill-opacity', '0.5');
 
-        $("#container-1").css({bottom: 0, right: 0, position:'relative'});
-        $("#container-2").css({bottom: 30, left: 30, position:'relative'});
-        $("#container-3").css({top: 0, right: 0, position:'relative'});
-        $("#container-4").css({top: 0, left: 0, position:'relative'});    
+        $("#define").css({bottom: 0, right: 0, position:'relative'});
+        $("#design").css({bottom: 30, left: 30, position:'relative'});
+        $("#improve").css({top: 0, right: 0, position:'relative'});
+        $("#embed").css({top: 0, left: 0, position:'relative'});    
         $('.diagram').css('border-radius', '0 50px 0 0')
         $('.diagram').css('border-top', '19px solid transparent')
         $('.diagram').css('border-right', '19px solid transparent')
@@ -48,15 +48,15 @@ $(document).ready(function(){
         $('.detail').css({left: 720, top:0, position:'absolute'});
     });
 
-    $('#container-3').on('click',function(){
-        $("#container-1").css('opacity', '0.5');
-        $("#container-2 #Ellipse path:last-child").css('fill-opacity', '0.5');
-        $("#container-3 #Ellipse path:last-child").css('fill-opacity', '0');
-        $("#container-4 #Ellipse path:last-child").css('fill-opacity', '0.5');
-        $("#container-1").css({bottom: 0, right: 0, position:'relative'});
-        $("#container-2").css({bottom: 0, left: 0, position:'relative'});
-        $("#container-3").css({top: 30, right: 30, position:'relative'});
-        $("#container-4").css({top: 0, left: 0, position:'relative'});
+    $('#improve').on('click',function(){
+        $("#define").css('opacity', '0.5');
+        $("#design #Ellipse path:last-child").css('fill-opacity', '0.5');
+        $("#improve #Ellipse path:last-child").css('fill-opacity', '0');
+        $("#embed #Ellipse path:last-child").css('fill-opacity', '0.5');
+        $("#define").css({bottom: 0, right: 0, position:'relative'});
+        $("#design").css({bottom: 0, left: 0, position:'relative'});
+        $("#improve").css({top: 30, right: 30, position:'relative'});
+        $("#embed").css({top: 0, left: 0, position:'relative'});
         $('.diagram').css('border-radius', '0 0 0 50px')
         $('.diagram').css('border-bottom', '19px solid transparent')
         $('.diagram').css('border-left', '19px solid transparent')
@@ -70,15 +70,15 @@ $(document).ready(function(){
         $('.policy-container').css('flex-direction', 'initial')
     });
 
-    $('#container-4').on('click',function(){
-        $("#container-1").css('opacity', '0.5');
-        $("#container-2 #Ellipse path:last-child").css('fill-opacity', '0.5');
-        $("#container-3 #Ellipse path:last-child").css('fill-opacity', '0.5');
-        $("#container-4 #Ellipse path:last-child").css('fill-opacity', '0');
-        $("#container-1").css({bottom: 0, right: 0, position:'relative'});
-        $("#container-2").css({bottom: 0, left: 0, position:'relative'});
-        $("#container-3").css({top: 0, right: 0, position:'relative'});
-        $("#container-4").css({top: 30, left: 30, position:'relative'});
+    $('#embed').on('click',function(){
+        $("#define").css('opacity', '0.5');
+        $("#design #Ellipse path:last-child").css('fill-opacity', '0.5');
+        $("#improve #Ellipse path:last-child").css('fill-opacity', '0.5');
+        $("#embed #Ellipse path:last-child").css('fill-opacity', '0');
+        $("#define").css({bottom: 0, right: 0, position:'relative'});
+        $("#design").css({bottom: 0, left: 0, position:'relative'});
+        $("#improve").css({top: 0, right: 0, position:'relative'});
+        $("#embed").css({top: 30, left: 30, position:'relative'});
         $('.diagram').css('border-radius', '0 0 50px 0')
         $('.diagram').css('border-bottom', '19px solid transparent')
         $('.diagram').css('border-right', '19px solid transparent')

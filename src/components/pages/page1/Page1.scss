@@ -2,49 +2,33 @@
     margin-top: 60px;
     position: relative;
 
-    .main {
+    .quarter-field {
         position: absolute;
         left: 230px;
         background-color: white;
 
-        .main-container-1 {
+        .define-design-container {
             display: flex;
             justify-content: center;   
             gap: 11px;        
             
-            .container-1, .container-2 {
+            .define, .design {
                 background-color: white;
                 cursor: pointer;
                 transition: all 0.3s ease-in;
-
-                // svg {
-                //     #Ellipse {
-                //         path:last-child {
-                //             fill-opacity: 0;
-                //         }
-                //     }
-                // }
             }          
         }
     
-        .main-container-2 {
+        .improve-embed-container {
             display: flex;
             justify-content: center;       
             gap: 11px;
             margin-top: 11px;      
            
-            .container-3, .container-4 {
+            .improve, .embed {
                 background-color: white;
                 cursor: pointer;
                 transition: all 0.3s ease-in;
-
-                // svg {
-                //     #Ellipse {
-                //         path:last-child {
-                //             fill-opacity: 0;
-                //         }
-                //     }
-                // }
             }
         }
     }
