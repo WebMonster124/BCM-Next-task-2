@@ -363,7 +363,7 @@ const Page1 = () => {
                     </div>
                     <div className='policy'>
                         <div className='policy-container'>
-                            <p>Appetite</p>fai 
+                            <p>Appetite</p>
                             <div className='mark-blue'></div>
                         </div>
                         <div className='status-not-approved'>Not Approved</div>
