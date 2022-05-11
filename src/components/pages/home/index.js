@@ -1,19 +1,17 @@
 import React from 'react';
-
-import {    
-    Button,
-} from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 import Back_image_1 from '../../../images/background1.png';
 import Back_image_2 from '../../../images/background2.png';
 import Image1 from '../../../images/image1.png';
 import Image2 from '../../../images/image2.png';
 import Vector from '../../../images/Vector.png';
-import Next_btn from '../../../images/next_btn.png';
 
 import './Home.scss';
 
 const Home = () => { 
+    const navigate = useNavigate();
+
     return (
         <div className="home-main">
             <div className='choose-option'>Choose an option below to continue</div>
@@ -55,7 +53,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <button className='btn'>NEXT
+            <button className='btn' onClick={() => navigate('/page1')}>NEXT
                 <img src={Vector} />
             </button>
         </div>
