@@ -40,7 +40,7 @@ $(document).ready(function(){
         $('.diagram').css('border-right', '19px solid transparent')
         $('.diagram').css('border-bottom', 'none')
         $('.diagram').css('border-left', 'none')
-        $('.diagram').css('background', 'linear-gradient(186deg, #3E66FB, #fdfdfd) border-box') 
+        $('.diagram').css('background', 'linear-gradient(160deg, #3E66FB, #fdfdfd) border-box') 
         $('.description').css({top: 75, left: 267, position:'absolute'}); 
         $('.policy-container').css('flex-direction', 'row-reverse')
         $(".title").css('text-align', 'right');
@@ -84,7 +84,7 @@ $(document).ready(function(){
         $('.diagram').css('border-right', '19px solid transparent')
         $('.diagram').css('border-top', 'none')
         $('.diagram').css('border-left', 'none')
-        $('.diagram').css('background', 'linear-gradient(-20deg, #3E66FB, #fdfdfd) border-box') 
+        $('.diagram').css('background', 'linear-gradient(10deg, #3E66FB, #fdfdfd) border-box') 
         $('.description').css({top: -40, left: 267, position:'absolute'}); 
         $('.policy-container').css('flex-direction', 'row-reverse')
         $(".title").css('text-align', 'right');
